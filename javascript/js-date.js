@@ -1,0 +1,1 @@
+$('.dvajseti').val(new Date().toJSON().slice(0,10));

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pristopna Izjava K Društvu</title>
+		<link rel="stylesheet" href="css/css.css">
+		<link rel="icon" type="image" href="favicon/favicon.png" />
+		<link rel="shortcut icon" type="image" href="favicon/favicon.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+		<meta charset="utf-8" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.3.5/signature_pad.min.js" integrity="sha512-kw/nRM/BMR2XGArXnOoxKOO5VBHLdITAW00aG8qK4zBzcLVZ4nzg7/oYCaoiwc8U9zrnsO9UHqpyljJ8+iqYiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script src="javascript/js-alert3.js"></script>
+		
+	</head>
+
+	<body background="images/background.jpg">
+		<form id="fullForm">
+			<div class="prvi">
+				<div class="drugi">
+					<label for="ime1">
+						Naziv in naslov društva:
+					</label>
+					<input class="prvi" type="text" id="ime1" name="1" required />
+				</div>
+				
+				<h3>PRISTOPNA IZJAVA K DRUŠTVU</h3>
+		
+				<div class="tretji"> 
+					<label for="ime2">
+						Ime in priimek:
+					</label>
+					<input class="tretji" type="text" id="ime2" name="3" required />
+				</div>
+			
+				<div class="cetrti"> 
+					<label for="ime3">
+						Ulica in hišna številka:
+					</label>
+					<input class="cetrti" type="text" id="ime3" name="4" required />
+				</div>
+			
+				<div class="peti_sesti">
+					<label for="ime4">
+						Poštna številka:
+					</label>
+					<input class="peti" type="text" id="ime4" name="5" maxlength="4" pattern="[0-9]+" required /> 
+					<label for="ime5">
+						, Pošta:
+					</label>
+					<input class="sesti" type="text" id="ime5" name="6" required />
+				</div>
+			
+				<div class="sedmi"> 
+					<label for="ime6">
+						Datum rojstva (dan, mesec in leto):
+					</label>
+					<input class="sedmi" type="date" id="ime6" name="7" value="1960-01-01" min="1901-01-01" max="2021-01-01" required />
+				</div>
+			
+				<div class="osmi_deveti">
+					<label for="ime7">
+						Domači telefon:
+					</label>
+					<input class="osmi" type="text" pattern="[0-9]+" id="ime7" maxlength="13" name="8" />
+					<label for="ime8">
+						, GSM:
+					</label>
+					<input class="deveti" type="text" id="ime8" name="9" maxlength="13" pattern="[0-9]+" required />
+				</div>
+
+				<div class="deseti"> 
+					<label for="ime9">
+						Elektronski naslov:
+					</label>
+					<input class="deseti" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="ime9" name="10" required />
+				</div>
+
+				<div class="enajst"> 
+					<label for="ime10" >
+						Dosežena stopnja izobrazbe:
+					</label>
+					<select class="enajst" name="11" id="ime11">
+						<option value=""></option>
+						<option value="brez">brez</option>
+						<option value="1 (SOK)">1 (SOK)</option>
+						<option value="2 (SOK)">2 (SOK)</option>
+						<option value="3 (SOK)">3 (SOK)</option>
+						<option value="4 (SOK)">4 (SOK)</option>
+						<option value="5 (SOK)">5 (SOK)</option>
+						<option value="6 (SOK)">6 (SOK)</option>
+						<option value="7 (SOK)">7 (SOK)</option>
+						<option value="8 (SOK)">8 (SOK)</option>
+						<option value="9 (SOK)">9 (SOK)</option>
+						<option value="10 (SOK)">10 (SOK)</option>
+					</select>
+					<label for="ime11">
+						, poklic:
+					</label>
+					<input class="dvanajst" type="text" id="ime11" name="12" />
+				</div>
+				
+				<div class="trinajsti"> 
+					<label for="ime12">
+						Sem državljan/ka Republike Slovenije. 
+					</label>
+					<input class="trinajsti" type="radio" id="ime12" name="13" required />
+					<label>
+						DA
+					</label>
+					<input class="stirinajsti" type="radio" id="ime13" name="13" required />
+					<label>
+						NE
+					</label>
+				</div>
+				
+				<div class="petnajsti"> 
+					<label for="ime14">
+						Vstopam v (ime društva)
+					</label>
+					<input class="petnajsti" type="text" id="ime14" name="14" required />
+				</div>
+				
+				<div class="sesnajsti"> 
+					<label for="ime">
+						in sprejemam njegov program in statut oziroma pravila.
+					</label>
+				</div>
+				
+				<div class="sedemnajsti"> 
+					<label for="ime15">
+						Soglašam, da se smejo moji osebni podatki obdelovati, skladno s prvim odstavkom 8. Člena zakona o varstvu osebnih podatkov. Seznanjen/a sem, da se bodo moji osebni podatki obdelovali za namen vodenja evidence o članih društva in  vzpostavljanja korespondence v okvirih delovanja društva, skladno z drugim odstavkom 8. Člena Zakona o varstvu osebnih podatkov.
+					</label> <br><br>
+					<input class="sedemnajsti" type="radio" id="ime15" name="15" required />
+					<label>
+						DA
+					</label>
+					<input class="osemnajsti" type="radio" id="ime15" name="15" required />
+					<label>
+						NE
+					</label>
+				</div>
+				
+				<div class="devetnajsti"> 
+					<label for="ime17">
+						Kraj in datum:
+					</label>
+					<input class="devetnajsti" type="text" id="ime17" name="16" required />,
+					<input class="dvajseti" type="date" id="ime17" min="2021-10-21" name="17" required />
+					<script src="javascript/js-date.js">
+					</script>
+				</div>
+			
+				<div class="enaindvajseti">
+					<span class="podpis">Podpis:</span>
+					<canvas id="signature-pad">
+						<script src="javascript/js-canvas.js">
+						</script>
+					</canvas>
+				</div>
+				
+				<button type="button" onclick="myFunction()"><img src="images/button.png"/>
+					<script src="javascript/js-alert.js">
+					</script>
+				</button>
+
+				<input type="submit" onclick="myFunction2()" value="POŠLJI">
+				<script src="javascript/js-alert2.js">
+					</script>
+				</input>
+			</div>
+		</form>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
